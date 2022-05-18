@@ -77,6 +77,8 @@ echo -e '\e[31mStart Ubuntu Dock setting...'
 gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'featherpad.desktop']"
 # Ubuntu Dockのサイズを変更
 gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 16
+# Dockの上でホイールを動かしたときの動作を無効にする
+gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'do-nothing'
 echo -e '\e[31mEnd Ubuntu Dock setting'
 
 # ホームディレクトリを開くショートカットを作成
